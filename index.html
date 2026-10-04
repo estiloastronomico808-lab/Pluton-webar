@@ -57,6 +57,7 @@
   <button id="btnAtras">⬅ Atrás</button>
   <button id="btnInicio">🏠 Inicio</button>
   <button id="btnSiguiente">Siguiente ➡</button>
+  <button id="btnWeb">Planetario Digital Chimalhuacán</button>
   <a class="btn-enlace" href="https://www.facebook.com/Planetario.chimalhuacan.2022/" target="_blank" rel="noopener">Planetario Digital Chimalhuacán</a>
 </nav>
 
@@ -139,6 +140,8 @@ document.getElementById("btnFoto").onclick = async () => {
     a.download = "museo-" + piezas[actual].id + ".png";
     a.click();
     URL.revokeObjectURL(a.href);
+    document.getElementById("btnWeb").onclick = () =>
+  window.open("https://www.facebook.com/Planetario.chimalhuacan.2022/", "_blank", "noopener");
   } catch (e) {
     alert("No se pudo tomar la foto. En modo AR usa la captura de pantalla de tu teléfono.");
   }
