@@ -42,7 +42,7 @@
   shadow-intensity="0"
   loading="eager"
   reveal="auto">
-  <button slot="ar-button" id="btnAR">👋 Ver en tu espacio (AR)</button>
+  <button slot="ar-button" id="btnAR">👋 Ver</button>
   <div slot="progress-bar" class="cargando"></div>
 </model-viewer>
 
@@ -66,21 +66,21 @@
    archivo: ruta al .glb (carpeta models/)
    escala:  tamaño relativo en AR para que quepa en 4 x 4 m (ver guía)   */
 const piezas = [
-  { id:"sol",      nombre:"Sistema Solar (Inicio)", archivo:"Pluton4.glb",
+  { id:"sol",      nombre:"Sistema Solar (Inicio)", archivo:"SUN.glb",
     texto:"Bienvenida al museo. Usa Siguiente para recorrer los mundos.", dato:"" },
-  { id:"mercurio", nombre:"Mercurio", archivo:"models/mercurio.glb",
+  { id:"mercurio", nombre:"Mercurio", archivo:"MER.glb",
     texto:"El planeta más cercano al Sol y el más pequeño.", dato:"Diámetro: 4 879 km" },
-  { id:"venus",    nombre:"Venus", archivo:"models/venus.glb",
+  { id:"venus",    nombre:"Venus", archivo:"VEN.glb",
     texto:"Su atmósfera densa atrapa el calor: es el planeta más caliente.", dato:"Diámetro: 12 104 km" },
   { id:"tierra",   nombre:"Tierra", archivo:"models/tierra.glb",
     texto:"Nuestro hogar, el único mundo con vida conocida.", dato:"Diámetro: 12 742 km" },
   { id:"luna",     nombre:"La Luna", archivo:"models/luna.glb",
     texto:"Satélite natural de la Tierra; causa las mareas.", dato:"Diámetro: 3 474 km" },
-  { id:"marte",    nombre:"Marte", archivo:"models/marte.glb",
+  { id:"marte",    nombre:"Marte", archivo:"MAR.glb",
     texto:"El planeta rojo, con el volcán más alto: el Monte Olimpo.", dato:"Diámetro: 6 779 km" },
   { id:"asteroides",nombre:"Cinturón de asteroides", archivo:"models/asteroides.glb",
     texto:"Millones de rocas entre Marte y Júpiter, restos de la formación del sistema solar.", dato:"" },
-  { id:"jupiter",  nombre:"Júpiter", archivo:"models/jupiter.glb",
+  { id:"jupiter",  nombre:"Júpiter", archivo:"JUP.glb",
     texto:"El gigante gaseoso; su Gran Mancha Roja es una tormenta enorme.", dato:"Diámetro: 139 820 km" },
   { id:"io",       nombre:"Ío", archivo:"models/io.glb",
     texto:"Luna galileana, el cuerpo con más volcanes activos.", dato:"Diámetro: 3 643 km" },
@@ -90,11 +90,11 @@ const piezas = [
     texto:"La luna más grande del sistema solar, mayor que Mercurio.", dato:"Diámetro: 5 268 km" },
   { id:"calisto",  nombre:"Calisto", archivo:"models/calisto.glb",
     texto:"Luna galileana muy craterizada, de superficie antigua.", dato:"Diámetro: 4 821 km" },
-  { id:"saturno",  nombre:"Saturno", archivo:"models/saturno.glb",
+  { id:"saturno",  nombre:"Saturno", archivo:"SAT.glb",
     texto:"Famoso por sus anillos de hielo y roca.", dato:"Diámetro: 116 460 km" },
-  { id:"urano",    nombre:"Urano", archivo:"models/urano.glb",
+  { id:"urano",    nombre:"Urano", archivo:"URA.glb",
     texto:"Gigante helado que gira 'acostado' sobre su costado.", dato:"Diámetro: 50 724 km" },
-  { id:"neptuno",  nombre:"Neptuno", archivo:"models/neptuno.glb",
+  { id:"neptuno",  nombre:"Neptuno", archivo:"NEP.glb",
     texto:"El planeta más lejano, con los vientos más veloces.", dato:"Diámetro: 49 244 km" },
   { id:"cometa",   nombre:"Cometa", archivo:"models/cometa.glb",
     texto:"Bola de hielo y polvo que desarrolla cola al acercarse al Sol.", dato:"" },
@@ -104,6 +104,8 @@ const piezas = [
     texto:"Observa en infrarrojo desde el punto L2, a 1.5 millones de km.", dato:"Espejo: 6.5 m" },
   { id:"parker",   nombre:"Sonda Parker", archivo:"models/parker.glb",
     texto:"Se acerca al Sol más que cualquier otra nave para estudiar su corona.", dato:"" }
+  { id:"pluton",   nombre:"Plutón", archivo:"Pluton4.glb",
+    texto:"Desde 2006 fue reclasificado como planetoide", dato:"Antes de 2006 era un planeta" }
 ];
 
 /* ===== 2. LÓGICA ===== */
