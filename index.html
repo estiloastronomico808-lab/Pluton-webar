@@ -73,8 +73,8 @@ const piezas = [
     texto:"Su atmósfera densa atrapa el calor: es el planeta con mayor temperatura del sistema solar.", dato:"Diámetro: 12 104 km" },
   { id:"tierra",   nombre:"Tierra", archivo:"TIE.glb",
     texto:"Nuestro hogar, el único mundo con vida conocida.", dato:"Diámetro: 12 742 km" },
-  { id:"luna",     nombre:"La Luna", archivo:"models/LUNA.glb",-->
-    texto:"Satélite natural de la Tierra", dato:"Puedes conocer una roca lunar en el Museo Universum" },
+  { id:"luna",     nombre:"La Luna", archivo:"LUN.glb",
+    texto:"Satélite natural de la Tierra", dato:"P" },
   { id:"marte",    nombre:"Marte", archivo:"MAR.glb",
     texto:"El planeta rojo, con el volcán más alto: el Monte Olimpo.", dato:"Diámetro: 6 779 km" },
  /* { id:"asteroides",nombre:"Cinturón de asteroides", archivo:"models/ASTEROIDES.glb",
@@ -101,8 +101,8 @@ const piezas = [
     texto:"Bola de hielo y polvo que desarrolla cola al acercarse al Sol.", dato:"" },
   { id:"hubble",   nombre:"Telescopio Espacial Hubble", archivo:"models/HUBBLE.glb",
     texto:"En órbita terrestre desde 1990, nos dio imágenes icónicas del universo.", dato:"Órbita: ~540 km" },*/
-  { id:"xchandra",     nombre:"Telescopio Espacial", archivo:"/X.glb",
-    texto:"X Chandra", dato:"Oberva en rayos X" },
+  { id:"xchandra",     nombre:"Telescopio Espacial", archivo:"X.glb",
+    texto:"X Chandra", dato:"Observa en rayos X" },
   /*{ id:"parker",   nombre:"Sonda Parker", archivo:"models/PARKER.glb",
     texto:"Se acerca al Sol más que cualquier otra nave para estudiar su corona.", dato:"" }*/
 ];
@@ -130,7 +130,7 @@ function precargar(i) {
 
 /* Si un modelo aún no existe, avisa en lugar de dejar el visor vacío */
 visor.addEventListener("error", () => {
-  document.getElementById("dato").textContent = "⚠ Módelo 3D en construcción";
+  document.getElementById("dato").textContent = "⚠ Modelo 3D en construcción";
 });
 
 document.getElementById("btnAtras").onclick     = () => mostrar(actual - 1);
