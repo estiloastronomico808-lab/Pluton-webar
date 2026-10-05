@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Museo Virtual del Sistema Solar del Planetario Digital Chimalhuacán</title>
+<title>Museo Virtual del Sistema Solar</title>
 <script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
 <style>
   :root { --fondo:#05070f; --texto:#e8ecf8; --acento:#ffb347; }
@@ -58,7 +58,6 @@
   <button id="btnInicio">Inicio</button>
   <button id="btnSiguiente">Siguiente ➡</button>
   <button id="btnFoto">Foto</button>
-  <button id="btnWeb">Planetario Digital Chimalhuacán</button>
 </nav>
 
 <script>
@@ -74,8 +73,8 @@ const piezas = [
     texto:"Su atmósfera densa atrapa el calor: es el planeta con mayor temperatura del sistema solar.", dato:"Diámetro: 12 104 km" },
   { id:"tierra",   nombre:"Tierra", archivo:"TIE.glb",
     texto:"Nuestro hogar, el único mundo con vida conocida.", dato:"Diámetro: 12 742 km" },
- /*{ id:"luna",     nombre:"La Luna", archivo:"models/LUNA.glb",-->
-    texto:"Satélite natural de la Tierra; causa las mareas.", dato:"Diámetro: 3 474 km" },*/
+  { id:"luna",     nombre:"La Luna", archivo:"models/LUNA.glb",-->
+    texto:"Satélite natural de la Tierra", dato:"Puedes conocer una roca lunar en el Museo Universum" },
   { id:"marte",    nombre:"Marte", archivo:"MAR.glb",
     texto:"El planeta rojo, con el volcán más alto: el Monte Olimpo.", dato:"Diámetro: 6 779 km" },
  /* { id:"asteroides",nombre:"Cinturón de asteroides", archivo:"models/ASTEROIDES.glb",
